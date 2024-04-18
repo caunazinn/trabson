@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    let num1 = parseInt(prompt("Digite o primeiro número: "));
+let num2 = parseInt(prompt("Digite o segundo número: "));
+let a = num1;
+let b = num2;
+let resto;
+
+while (b !== 0) {
+    resto = a % b;
+    a = b;
+    b = resto;
+}
+
+document.write("O MDC é: " + a);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
