@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenação</title>
+    <script>
 const input = prompt("Digite os números: ");
 const array = input.split(' ').map(Number);
 
@@ -14,7 +21,7 @@ const quickSort = (array) => {
     if (i !== Math.floor(array.length / 2)) {
       if (array[i] < pivot) {
         left.push(array[i]);
-} else {
+      } else {
         right.push(array[i]);
       }
     }
@@ -24,4 +31,11 @@ const quickSort = (array) => {
 };
 
 const ordem = quickSort(array);
-console.log("Array ordenado:", ordem);
+document.write("Numeros em ordem: " + ordem);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
